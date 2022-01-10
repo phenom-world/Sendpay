@@ -10,8 +10,8 @@ const NavbarItem = ({ title, classProps }) => {
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center">
-      <div className="flex-[0.5] flex-initial justify-center items-center">
+    <nav className="w-full flex md:justify-center justify-between items-center p-4">
+      <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div>
       <ul className="text-white flex-initial md:flex hidden list-none justify-between items-center">
@@ -38,7 +38,7 @@ const Navbar = () => {
         )}
         {toggleMenu && (
           <ul
-            className="z-10 fixed top-0 right-0 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col items-end justify-start rounded-md blue-glassmorphism
+            className="z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col items-end justify-start rounded-md blue-glassmorphism
           text-white animate-slide-in"
           >
             <li className="text-xl w-full my-2">
