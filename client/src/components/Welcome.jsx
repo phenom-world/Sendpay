@@ -52,7 +52,7 @@ const Welcome = () => {
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             Explore the Crypto World. Buy and Sell cryptocurrencies easily on
-            Ticoin
+            Transacta.
           </p>
           {!currentAccount && (
             <button
